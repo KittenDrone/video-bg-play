@@ -5,11 +5,12 @@ const IS_YOUTUBE = window.location.hostname.search(/(?:^|.+\.)youtube\.com/) > -
 const IS_MOBILE_YOUTUBE = window.location.hostname == 'm.youtube.com';
 const IS_DESKTOP_YOUTUBE = IS_YOUTUBE && !IS_MOBILE_YOUTUBE;
 const IS_VIMEO = window.location.hostname.search(/(?:^|.+\.)vimeo\.com/) > -1;
-
+const IS_AUDIO = window.location.hostname.search(/(?:^|.+\.)mixcloud\.com/) > -1 ||
+                   window.location.hostname.search(/(?:^|.+\.)soundcloud\.com/) > -1;
 const IS_ANDROID = window.navigator.userAgent.indexOf('Android') > -1;
 
 // Page Visibility API
-if (IS_ANDROID || !IS_DESKTOP_YOUTUBE) {
+if (IS_ANDROID || !IS_DESKTOP_YOUTUBE || IS_AUDIO) {
   Object.defineProperties(document.wrappedJSObject,
     { 'hidden': {value: false}, 'visibilityState': {value: 'visible'} });
 }

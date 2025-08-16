@@ -1,11 +1,11 @@
 {
   "extensionName": {
-    "message": "Video Background Play Fix",
+    "message": "Background Play Fix",
     "description": "Name of the extension."
   },
 
   "extensionDescription": {
-    "message": "Play back videos in background even if a page doesn't want you to.",
+    "message": "Play back videos in background even if a page doesn't want you to. Expanded to include mixcloud and soundcloud.",
     "description": "Description of the extension."
   }
 }

@@ -33,3 +33,6 @@ As a demonstration, the content script currently injects itself to the following
 
 * youtube.com and youtube-nocookie.com
 * vimeo.com
+
+ - mixcloud.com
+ - soundcloud.com
